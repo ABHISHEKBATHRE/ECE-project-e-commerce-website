@@ -48,8 +48,8 @@ return (
  </li>
             ))
         }
-        <li className='bg-slate-950 text-white p-4 text-xl  relative left-[36vw] border border-black border-[4px] rounded-2xl'>{`Total Cart Value: Rs ${totalprice}/-`}</li>
-        <li><h2 className='bg-slate-950 text-white rounded-3xl p-4 relative left-[36vw] mt-4'>{`Go to payment->` }</h2></li>
+        <li className='bg-slate-500 text-black p-4 text-xl font-bold  relative left-[36vw] border-black border-[1px] rounded-2xl'>{`Total Cart Value: Rs ${totalprice}/-`}</li>
+        <li><h2 className='bg-slate-500 text-black rounded-3xl p-4 relative left-[36vw] mt-4  border-black border-[1px]'>{`Go to payment->` }</h2></li>
     </ul>
     
     </div>

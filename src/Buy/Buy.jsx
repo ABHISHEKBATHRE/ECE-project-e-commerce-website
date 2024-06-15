@@ -28,7 +28,7 @@ const Buy = () => {
                 </div>
                 <div className="pri font-bold text-xl rounded-xl flex justify-between">
                 <h2 className='text-5xl'>{`Rs ${card.price} /-` }</h2>
-                <h2 className='bg-slate-950 text-white rounded-3xl p-4'>{`Go to payment->` }</h2>
+                <NavLink to="/payment" className='bg-slate-950 text-white rounded-3xl p-4'>{`Go to payment->` }</NavLink>
                 </div>
             </div>
         </div>

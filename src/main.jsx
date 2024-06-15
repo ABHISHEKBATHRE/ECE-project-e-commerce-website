@@ -9,6 +9,7 @@ import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } 
 import Contact from './components/Contact/Contact.jsx'
 import Buy from './Buy/Buy.jsx'
 import Cart from './cart/Cart'
+import Payment from './Payments/Payment.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout/>}>
@@ -17,6 +18,7 @@ const router=createBrowserRouter(
 <Route path="contact" element={<Contact/>}/>
 <Route path="cart" element={<Cart/>}/>
 <Route path="buy" element={<Buy/>}/>
+<Route path="/payment" element={<Payment/>}/>
     </Route>
   )
 )
