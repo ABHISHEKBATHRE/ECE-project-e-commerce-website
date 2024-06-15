@@ -1,13 +1,23 @@
 import React from 'react'
 import { useDispatch,useSelector } from 'react-redux'
-import { addcart} from '../../features/Cartslice'
+import { addcard, addcart} from '../../features/Cartslice'
+import { NavLink } from 'react-router-dom'
 const Card = (props) => {
-  const counter=useSelector((state)=>state.cart.value)
-  const dispatch=useDispatch()
+  const dispatch=useDispatch();
+  const car={
+    img:props.link,
+    title:props.title,
+    des:props.des,
+    price:props.price,
+  }
+  const handlecard=()=>{
+    dispatch(addcard(car));
+  }
   const cart={
     img:props.link,
     title:props.title,
     des:props.des,
+    price:props.price,
     quan:1,
 }
   const handleadd=()=>{
@@ -24,8 +34,11 @@ dispatch(addcart(cart))
       <h3>{props.des}</h3>
       </div>
       </div>
+      <div className="price font-bold text-xl text-center p-2">
+        <h2>{`Rs ${props.price} /-`}</h2>
+      </div>
       <div className="tem flex text-center justify-around mb-2 w-full">
-    <button className='bg-orange-800 text-orange-200 rounded-xl p-2 font-bold border border-black'>Buy</button>
+      <NavLink to="/buy" className='bg-orange-800 text-orange-200 rounded-xl p-2 font-bold border border-black ' onClick={handlecard}>Buy</NavLink>
     <button className='bg-orange-800 text-orange-200 rounded-xl p-2 font-bold border border-black' onClick={handleadd}>Add to card</button>
     </div>
     </div>

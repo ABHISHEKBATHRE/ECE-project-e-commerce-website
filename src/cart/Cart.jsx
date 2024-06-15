@@ -6,19 +6,21 @@ import {decrement, increment, removecart } from '../features/Cartslice';
 const Cart = () => {
 
     const allcarts=useSelector((state)=>state.cart.carts);
+    const totalprice=useSelector((state)=>state.cart.totalprice)
     const dispatch=useDispatch();
     const handleminus=(cart)=>{
         if(cart.quan==1)
-        {    
-            dispatch(removecart(cart.id))
+        {   
+            dispatch(removecart(cart.id));
+
         }
         else{
         dispatch(decrement(cart.id))}
     }
 return (
-    <>
+    <div className='bg-slate-400'>
     <h1 className='text-3xl font-bold text-center'>CARTS ITEMS</h1>
-    <ul className='overflow-y-auto h-[67.4vh] flex flex-col items-center ju'>
+    <ul className='overflow-y-auto h-[62.5vh] flex flex-col items-center '>
         {
             allcarts.map((cart)=>(
                 <li className='border-[2px] rounded-lg border-black mb-2 p-4 flex justify-between items-center w-11/12 ' key={cart.id}>
@@ -46,8 +48,11 @@ return (
  </li>
             ))
         }
+        <li className='bg-slate-950 text-white p-4 text-xl  relative left-[36vw] border border-black border-[4px] rounded-2xl'>{`Total Cart Value: Rs ${totalprice}/-`}</li>
+        <li><h2 className='bg-slate-950 text-white rounded-3xl p-4 relative left-[36vw] mt-4'>{`Go to payment->` }</h2></li>
     </ul>
-    </>
+    
+    </div>
   )
 }
 

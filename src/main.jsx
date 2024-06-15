@@ -7,6 +7,7 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Contact from './components/Contact/Contact.jsx'
+import Buy from './Buy/Buy.jsx'
 import Cart from './cart/Cart'
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router=createBrowserRouter(
 <Route path="about" element={<About/>}/>
 <Route path="contact" element={<Contact/>}/>
 <Route path="cart" element={<Cart/>}/>
+<Route path="buy" element={<Buy/>}/>
     </Route>
   )
 )
