@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Contact = () => {
   return (
@@ -38,10 +39,12 @@ const Contact = () => {
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
                         </div>
                         <div className="flex items-center justify-between">
-                            <button type="submit"
+                            <NavLink to='/' onClick={()=>{
+                                alert("Your message has been sent successfully.")
+                            }}
                                 className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                                 Send Message
-                            </button>
+                            </NavLink>
                         </div>
                     </form>
                 </div>

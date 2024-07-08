@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 const Payment = () => {
   return (
-    <div className='h-[calc(100vh-320px)] lg:h-[69vh] p-1'  style={{backgroundImage:`url("https://png.pngtree.com/thumb_back/fh260/background/20210424/pngtree-online-shopping-promotion-mobile-online-payment-image_662250.jpg")`, backgroundRepeat:'no-repeat',backgroundSize:'100vw 100vh'}}>
+    <div className='h-[calc(100vh-320px)] lg:h-[69vh] p-1 bg-slate-300'>
         <form>
             <div className="box font-bold flex flex-col bg-slate-500 border-[4px] w-1/4 gap-7 h-96 m-auto  rounded-2xl justify-center border-black">
    <div className="b1 flex gap-4 ">

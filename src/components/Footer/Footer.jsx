@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-   <footer className='flex w-screen lg:h-1/4 h-52 absolute bottom-0 bg-orange-900'>
+   <footer className='flex w-screen lg:h-1/4 h-52 absolute bottom-0 bg-slate-600'>
     <div className="left w-1/2 ">
 <img className='h-full' src="src\components\Footer\footimg.png" alt="" />
     </div>

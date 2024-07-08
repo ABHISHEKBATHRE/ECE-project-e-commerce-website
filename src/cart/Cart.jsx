@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {decrement, increment, removecart } from '../features/Cartslice';
-
+import { NavLink } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -18,7 +18,7 @@ const Cart = () => {
         dispatch(decrement(cart.id))}
     }
 return (
-    <div className='bg-slate-400'>
+    <div className='bg-slate-300'>
     <h1 className='text-3xl font-bold text-center'>CARTS ITEMS</h1>
     <ul className='overflow-y-auto h-[62.5vh] flex flex-col items-center '>
         {
@@ -48,8 +48,8 @@ return (
  </li>
             ))
         }
-        <li className='bg-slate-500 text-black p-4 text-xl font-bold  relative left-[36vw] border-black border-[1px] rounded-2xl'>{`Total Cart Value: Rs ${totalprice}/-`}</li>
-        <li><h2 className='bg-slate-500 text-black rounded-3xl p-4 relative left-[36vw] mt-4  border-black border-[1px]'>{`Go to payment->` }</h2></li>
+        <li className='bg-slate-400 text-black p-4 text-xl font-bold  relative left-[36vw] border-black border-[1px] rounded-2xl'>{`Total Cart Value: Rs ${totalprice}/-`}</li>
+        <li><NavLink to='/payment' className='bg-slate-400 text-black rounded-3xl p-4 relative left-[36vw] mt-4  border-black border-[1px]'>{`Go to payment->` }</NavLink></li>
     </ul>
     
     </div>
