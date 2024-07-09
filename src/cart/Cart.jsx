@@ -37,6 +37,9 @@ return (
                         dispatch(removecart(cart.id))
 
                     }}><img src="https://cdn.hugeicons.com/icons/delete-02-stroke-rounded.svg" alt="delete-02" width="24" height="24" /></button>
+                    <div className="m1 font-bold text-2xl">
+                        {`Rs ${cart.price*cart.quan}/-` }
+                    </div>
                     <div className="b3">
                         <h1>Quantity</h1>
                         <div className="b4 flex gap-6">
