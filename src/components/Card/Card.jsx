@@ -34,7 +34,7 @@ dispatch(addcart(cart))
       <h3>{props.des}</h3>
       </div>
       </div>
-      <div className="price font-bold text-xl text-center mb-2 lg:absolute lg:bottom-10 lg:right-2 ">
+      <div className="price font-bold text-xl text-black text-center mb-2 lg:absolute lg:bottom-10 lg:right-2 2xl:absolute 2xl:bottom-2 2xl:right-[48%] 2xl:text-base ">
         <h2>{`Rs ${props.price} /-`}</h2>
       </div>
       <div className="tem flex text-center justify-around mb-2 w-full">
