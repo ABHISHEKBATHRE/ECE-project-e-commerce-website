@@ -25,7 +25,7 @@ dispatch(addcart(cart))
   }
   return (
     <div className='container lg:w-1/6 w-1/2  m-2 bg-slate-600 rounded-xl relative border border-black' style={{height:'355px'}}>
-      <img className="size-fit rounded-xl h-[10rem] w-full" src={props.link} alt="" />
+      <img className="size-fit rounded-xl h-[10rem] w-full  2xl:h-[13rem]" src={props.link} alt="" />
       <div className="box flex flex-col items-center justify-center">
         <div className="b1 mt-2 font-bold text-xl underline">
       <h1>{props.title}</h1>

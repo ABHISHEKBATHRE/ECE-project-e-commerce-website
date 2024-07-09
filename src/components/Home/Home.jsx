@@ -13,8 +13,8 @@ const Home = () => {
       price={899}/>
       <Card link={"https://nevonprojects.com/wp-content/uploads/2021/01/arduino-alcohol-sense-system.jpg"} title={"Alcohol Sense"} des={"It is used for spraying and for grass-cutting."}
       price={999}/>
-       <Card link={"https://nevonprojects.com/wp-content/uploads/2019/06/Advance-foot-step-power-generation-with-RFID-based-mobile-charging_2.jpg"} title={"Footstep Charging"} des={"Generate Power from human steps and movement."}
-      price={1199}/>
+       <Card link={"https://nevonprojects.com/wp-content/uploads/2019/06/Advance-foot-step-power-generation-with-RFID-based-mobile-charging_2.jpg"} title={"Footstep Charging"} des={"Generate Power from human steps."}
+      price={699}/>
       </div>
     </div>
   )
