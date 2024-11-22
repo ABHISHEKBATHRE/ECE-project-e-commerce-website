@@ -4,31 +4,28 @@ import { NavLink } from 'react-router-dom'
 const Buy = () => {
    const card=useSelector((state)=>(state.cart.card)) 
   return (
-    <div className='bg-slate-400 text-black h-[calc(100vh-320px)] lg:h-[69vh] overflow-hidden'>
+    <div className='bg-slate-200 text-black h-[calc(100vh-320px)] lg:h-[69vh] overflow-hidden'>
         <h2>
             <NavLink to="/" className="font-bold">{`<-Go back` }</NavLink>
         </h2>
-        <div className="container flex gap-40 ml-4 ">
+        <div className="container flex gap-80 ml-4 ">
             <div className="image">
-            <img className='w-[40vw] h-[60vh] rounded-xl border border-black border-[3px ]' src={card.img} alt="" />
+            <img className='w-[30vw] h-[50vh] rounded-xl border-[3px ]' src={card.img} alt="" />
             </div>
             <div className="content flex flex-col justify-between ">
-            <div className="b1 flex flex-col gap-5 ">
-                <div className="ti font-bold text-3xl">
+            <div className="b1 flex flex-col gap-3 ">
+                <div className="ti font-bold text-2xl text-zinc-800">
                   <h1>{card.title}</h1>
                 </div>
-                <div className="des font-bold text-xl">
+                <div className="des text-xl">
                 <h2>{card.des}</h2>
                 </div>
-                <pre className="addr text-xl bg-gray-400 p-4">
-                {`Address:
-                Maulana Azad National Institute of Technology,
-                 BHOPAL,462003`}
-                </pre>
+                <label className='text-xl font-bold'>Address</label>
+                <textarea name="" id="" placeholder='Please write your address' className='h-20 p-2 rounded-xl bg-slate-200 text-xl text-zinc-900' ></textarea>
                 </div>
                 <div className="pri font-bold text-xl rounded-xl flex justify-between">
-                <h2 className='text-5xl'>{`Rs ${card.price} /-` }</h2>
-                <NavLink to="/payment" className='bg-slate-950 text-white rounded-3xl p-4'>{`Go to payment->` }</NavLink>
+                <h2 className='text-2xl'>{`Rs ${card.price} /-` }</h2>
+                <NavLink to="/payment" className='bg-zinc-900 text-slate-300 rounded-3xl p-2'>{`Go to payment->` }</NavLink>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="container mx-auto py-8 overflow-scroll h-[70vh] w-full"  style={{backgroundImage:`url("https://img.freepik.com/premium-photo/business-meeting_53876-91042.jpg")`, backgroundRepeat:`no-repeat`,backgroundSize: `100% `}}>
+    <div className="container mx-auto py-8 p-6 overflow-scroll h-[70vh] w-full"  style={{backgroundImage:`url("https://img.freepik.com/premium-photo/business-meeting_53876-91042.jpg")`, backgroundRepeat:`no-repeat`,backgroundSize: `100% `}}>
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
         <p className="text-lg mb-4">Welcome to our Electronics Projects website, your one-stop destination for exploring,
             learning, and creating within the fascinating realm of electronics. Whether you're an enthusiastic hobbyist,
